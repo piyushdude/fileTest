@@ -4,9 +4,11 @@ const fss = require('fs');
 
 //Video Api's
 app.get('/info', (req, res) => {
+	console.log("hello Node");
 	res.send("We are here for file upload");
 }); 
 app.get('/', (req, res) => {
+	console.log("hello Node");
 	res.send("We are here for file upload");
 }); 
 app.post("/blog", function(req, res) {
