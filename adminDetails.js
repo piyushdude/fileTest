@@ -1,16 +1,18 @@
 const app = require('./server');
 const base64ToImage = require('base64-to-image');
 const fss = require('fs');
+console.log("Hello asa");
 
 //Video Api's
 app.get('/info', (req, res) => {
-	console.log("hello Node");
+	console.log("Hello s");
 	res.send("We are here for file upload");
 }); 
 app.get('/', (req, res) => {
-	console.log("hello Node");
+	console.log("Hello s");
 	res.send("We are here for file upload");
 }); 
+
 app.post("/blog", function(req, res) {
     var reqBody = req.body;
     const image = reqBody.image;
