@@ -6,7 +6,9 @@ const fss = require('fs');
 app.get('/info', (req, res) => {
 	res.send("We are here for file upload");
 }); 
-
+app.get('/', (req, res) => {
+	res.send("We are here for file upload");
+}); 
 app.post("/blog", function(req, res) {
     var reqBody = req.body;
     const image = reqBody.image;
